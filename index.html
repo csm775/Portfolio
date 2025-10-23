@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Cellou</title>
+  <meta name="description" content="Développeur Web créatif spécialisé dans les expériences web modernes et performantes">
+
+  <!-- Fonts & Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Cursor personnalisé -->
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav">
+      <a href="#" class="nav__logo">Cellou</a>
+      <button class="nav__toggle" aria-label="Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="nav__menu">
+        <a href="#accueil" class="nav__link">Accueil</a>
+        <a href="#projets" class="nav__link">Projets</a>
+        <a href="#competences" class="nav__link">Compétences</a>
+        <a href="#about" class="nav__link">À propos</a>
+        <a href="#contact" class="nav__link nav__link--cta">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section id="accueil" class="hero">
+      <div class="hero__background">
+        <div class="shape shape--1"></div>
+        <div class="shape shape--2"></div>
+        <div class="shape shape--3"></div>
+      </div>
+      <div class="hero__content">
+        <p class="hero__greeting">Bonjour, je suis</p>
+        <h1 class="hero__title">
+          Cellou <span>Sow-Mouvagha</span>
+        </h1>
+        <p class="hero__subtitle">
+          Développeur Web Full Stack • Créateur de contenu<br>
+          Je conçois des expériences web modernes qui captivent et performent
+        </p>
+        <div class="hero__cta">
+          <a href="assets/cv.pdf" download class="btn btn--primary">
+            <i class="fas fa-download"></i>
+            <span>Télécharger mon CV</span>
+          </a>
+          <a href="#projets" class="btn btn--secondary">
+            <span>Voir mes projets</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projets -->
+    <section id="projets" class="section section--projects">
+      <div class="container">
+        <div class="section__header" data-aos="fade-up">
+         
+          <h2 class="section__title">Mes Projets</h2>
+          <p class="section__subtitle">Découvrez mes réalisations les plus récentes</p>
+        </div>
+        <div class="projets__grid">
+          <!-- Projet 1 -->
+          <div class="projet__card" data-aos="fade-up" data-aos-delay="100">
+            <div class="projet__image">
+              <div class="projet__image-bg">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <div class="projet__overlay">
+                <div class="projet__links">
+                  <a href="https://currencyfloww.netlify.app/" class="projet__link-icon" aria-label="Voir le projet">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="https://github.com/csm775/CurrencyFlow" class="projet__link-icon" aria-label="Code GitHub">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="projet__content">
+              <div class="projet__tags">
+                <span class="projet__tag">HTML/CSS</span>
+                <span class="projet__tag">JavaScript</span>
+                <span class="projet__tag">API</span>
+              </div>
+              <h3 class="projet__title">Convertisseur de devises</h3>
+              <p class="projet__description">
+                Site avec Convertisseur de devises en temps réel.
+              </p>
+            </div>
+          </div>
+
+          <!-- Projet 2 -->
+          <div class="projet__card" data-aos="fade-up" data-aos-delay="200">
+            <div class="projet__image">
+              <div class="projet__image-bg">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <div class="projet__overlay">
+                <div class="projet__links">
+                  <a href="https://travelinkk.netlify.app/" class="projet__link-icon" aria-label="Voir le projet">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="https://github.com/csm775/Travelink" class="projet__link-icon" aria-label="Code GitHub">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="projet__content">
+              <div class="projet__tags">
+                <span class="projet__tag">API</span>
+                <span class="projet__tag">Javascript</span>
+                <span class="projet__tag">HTML/CSS</span>
+              </div>
+              <h3 class="projet__title">Application de voyage</h3>
+              <p class="projet__description">
+                Site pour trouver un hébegement dans le monde.
+              </p>
+            </div>
+          </div>
+
+          <!-- Projet 3 -->
+          <div class="projet__card" data-aos="fade-up" data-aos-delay="300">
+            <div class="projet__image">
+              <div class="projet__image-bg">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <div class="projet__overlay">
+                <div class="projet__links">
+                  <a href="https://moviaa.netlify.app/" class="projet__link-icon" aria-label="Voir le projet">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="https://github.com/csm775/Movia" class="projet__link-icon" aria-label="Code GitHub">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="projet__content">
+              <div class="projet__tags">
+                <span class="projet__tag">REACT JS</span>
+                <span class="projet__tag">Vite</span>
+                <span class="projet__tag">API</span>
+              </div>
+              <h3 class="projet__title">Site Cinéma</h3>
+              <p class="projet__description">
+                Site de Films et Séries.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Compétences -->
+    <section id="competences" class="section section--skills">
+      <div class="container">
+        <div class="section__header" data-aos="fade-up">
+          <h2 class="section__title">Mes Compétences</h2>
+          <p class="section__subtitle">Technologies et outils que je maîtrise</p>
+        </div>
+        <div class="skills__container">
+  <div class="skill__card" data-aos="zoom-in" data-aos-delay="100">
+    <div class="skill__icon-wrapper">
+      <i class="fab fa-html5 skill__icon"></i>
+    </div>
+    <h3 class="skill__title">HTML5</h3>
+  </div>
+ 
+  <div class="skill__card" data-aos="zoom-in" data-aos-delay="150">
+    <div class="skill__icon-wrapper">
+      <i class="fab fa-css3-alt skill__icon"></i>
+    </div>
+    <h3 class="skill__title">CSS3</h3>
+  </div>
+ 
+  <div class="skill__card" data-aos="zoom-in" data-aos-delay="200">
+    <div class="skill__icon-wrapper">
+      <i class="fab fa-js skill__icon"></i>
+    </div>
+    <h3 class="skill__title">JavaScript</h3>
+  </div>
+ 
+  <div class="skill__card" data-aos="zoom-in" data-aos-delay="250">
+    <div class="skill__icon-wrapper">
+      <i class="fab fa-react skill__icon"></i>
+    </div>
+    <h3 class="skill__title">React</h3>
+  </div>
+ 
+  <div class="skill__card" data-aos="zoom-in" data-aos-delay="300">
+    <div class="skill__icon-wrapper">
+      <i class="fab fa-php skill__icon"></i>
+    </div>
+    <h3 class="skill__title">PHP</h3>
+  </div>
+ 
+  <div class="skill__card" data-aos="zoom-in" data-aos-delay="350">
+    <div class="skill__icon-wrapper">
+      <i class="fas fa-database skill__icon"></i>
+    </div>
+    <h3 class="skill__title">MySQL</h3>
+  </div>
+</div>
+</section>
+
+    <!-- À propos -->
+    <section id="about" class="section section--about">
+      <div class="container">
+        <div class="about__container">
+          <div class="about__image" data-aos="fade-right">
+            <div class="image__wrapper">
+              <img src="images/photo-csm.jpg" alt="Photo de Cellou" class="about__img">
+              <div class="image__border"></div>
+              <div class="image__shape"></div>
+            </div>
+          </div>
+          <div class="about__content" data-aos="fade-left">
+            <div class="section__header section__header--left">
+              <h2 class="section__title">À propos de moi</h2>
+              <p class="section__subtitle">Passionné par la création digitale</p>
+            </div>
+            <div class="about__text">
+              <p>
+                Passionné par le <strong>développement web</strong> et la création d'expériences numériques modernes,
+                je mets un point d'honneur à concevoir des sites à la fois élégants et performants.
+              </p>
+              <p>
+                En dehors du code, mes passions me nourrissent : le <strong>football</strong>,
+                l'<strong>histoire</strong>, la <strong>géographie</strong>, le <strong>voyage</strong>
+                et tout ce qui touche à la <strong>technologie</strong>. Ces centres d'intérêt m'inspirent
+                pour imaginer des projets ancrés dans la découverte et la créativité.
+              </p>
+              <p>
+                Je suis aussi <strong>créateur de contenu sur TikTok</strong>, où j'ai rassemblé une communauté
+                de plus de <strong>40 000 abonnés</strong>. Cette aventure m'a permis de développer des compétences
+                en communication visuelle, storytelling et gestion de communauté.
+              </p>
+            </div>
+            <div class="about__stats">
+              <div class="stat">
+                <div class="stat__number" data-count="40">0</div>
+                <div class="stat__label">K+ Abonnés</div>
+              </div>
+              <div class="stat">
+                <div class="stat__number" data-count="3">0</div>
+                <div class="stat__label">Projets réalisés</div>
+              </div>
+              <div class="stat">
+                <div class="stat__number" data-count="2">0</div>
+                <div class="stat__label">Ans d'expérience</div>
+              </div>
+            </div>
+            <a href="#contact" class="btn btn--primary">
+              <span>Me contacter</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section--contact">
+      <div class="container">
+        <div class="section__header" data-aos="fade-up">
+          <h2 class="section__title">Me contacter</h2>
+          <p class="section__subtitle">N'hésitez pas à me contacter pour discuter d'un projet ou d'une collaboration</p>
+        </div>
+        <div class="contact__container">
+          <div class="contact__info" data-aos="fade-right">
+            <div class="contact__item">
+              <div class="contact__icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div>
+                <h3>Email</h3>
+                <p>cellousowmouvagha@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact__item">
+              <div class="contact__icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div>
+                <h3>Téléphone</h3>
+                <p>+33 6 25 17 09 17</p>
+              </div>
+            </div>
+            <div class="contact__item">
+              <div class="contact__icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div>
+                <h3>Localisation</h3>
+                <p>Ile-De-France</p>
+              </div>
+            </div>
+          </div>
+              <form id="contact-form" class="contact__form" data-aos="fade-left">
+          <div class="form__row">
+            <div class="form__group">
+              <input type="text" name="user_name" placeholder="Votre nom" class="form__input" required>
+            </div>
+            <div class="form__group">
+              <input type="email" name="user_email" placeholder="Votre email" class="form__input" required>
+            </div>
+          </div>
+          <div class="form__group">
+            <input type="text" name="subject" placeholder="Sujet" class="form__input" required>
+          </div>
+          <div class="form__group">
+            <textarea name="message" placeholder="Votre message" class="form__textarea" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">
+            <span id="btn-text">Envoyer le message</span>
+            <i class="fas fa-paper-plane" id="btn-icon"></i>
+          </button>
+          <p id="form-status"></p>
+        </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__brand">
+          <h3>Cellou</h3>
+          <p>Développeur Web Full Stack passionné par la création d'expériences digitales exceptionnelles.</p>
+          <div class="footer__social">
+            <a href="https://linkedin.com/in/cellousowmouvagha" target="_blank" aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/csm775" target="_blank" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://tiktok.com/@tonprofil" target="_blank" aria-label="TikTok">
+              <i class="fab fa-tiktok"></i>
+            </a>
+          </div>
+        </div>
+        <div class="footer__links">
+          <div class="footer__section">
+            <h4>Navigation</h4>
+            <a href="#accueil">Accueil</a>
+            <a href="#projets">Projets</a>
+            <a href="#competences">Compétences</a>
+            <a href="#about">À propos</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="footer__section">
+            <h4>Réseaux</h4>
+            <a href="https://linkedin.com/in/cellousowmouvagha" target="_blank">LinkedIn</a>
+            <a href="https://github.com/csm775" target="_blank">GitHub</a>
+            <a href="https://tiktok.com/@tonprofil" target="_blank">TikTok</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 Cellou Sow-Mouvagha. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="email.js"></script>
+</body>
+</html>
